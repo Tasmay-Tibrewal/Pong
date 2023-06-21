@@ -11,3 +11,5 @@ These packages are inbuilt/pre-installed generally if the computer throws an err
 (Syntax : "pip install <package_name>")
 
 [Packages Used: turtle, random, threading, winsound, time, tkinter, csv]
+
+Note: Game Sound only wokrs in windows machines due to usage of the winsound module.
