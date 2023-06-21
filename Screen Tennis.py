@@ -15,7 +15,7 @@ sc = turtle.Screen()
 sc.title("Screen Tennis")
 sc.bgcolor("Black")
 sc.setup(width=1200, height=800)
-sc._root.iconbitmap(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Screentennis_logo.ico")
+sc._root.iconbitmap(r"Items\Screentennis_logo.ico")
 
 
 # Global Variables/ OBJECTS
@@ -131,7 +131,7 @@ def a1():
     
     if n == 1 and count1 == 1 and count4 == 0  and count == 0 :
 
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
 
         p2.clear()
         p2.write("1", font=("Courier", 24, "normal"))
@@ -148,7 +148,7 @@ def b2():
     
     if n == 1 and count1 == 1 and count4 == 0 and count == 0 :
         
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
 
         p2.clear()
         p2.write("2", font=("Courier", 24, "normal"))
@@ -165,7 +165,7 @@ def c3():
     
     if n == 1 and count1 == 1 and count4 == 0 and count == 0 :
         
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
 
         p2.clear()
         p2.write("3", font=("Courier", 24, "normal"))
@@ -182,7 +182,7 @@ def d4():
     
     if n == 1 and count1 == 1 and count4 == 0 and count == 0 :
 
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
 
         p2.clear()
 
@@ -216,7 +216,7 @@ def e5():
         m = 0
         count4 = 1
         
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
         
         p.clear()
         p2.clear()
@@ -240,7 +240,7 @@ def e5():
 
 def f6():
     
-    winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_FILENAME)
+    winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_FILENAME)
     
     quit()
 
@@ -251,13 +251,13 @@ def f7():
 
     n = 1
     
-    winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_FILENAME)
+    winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_FILENAME)
 
     if countf == 0:
 
         countf = 1
 
-        with open('score.csv','a',newline='') as csvfile:
+        with open(r'Items\score.csv','a',newline='') as csvfile:
         
             csvwriter = csv.writer(csvfile)
         
@@ -351,7 +351,7 @@ def g7():
         p.goto(460,-235)
         p.penup()
 
-        with open('score.csv','r',newline='') as csvfile:
+        with open(r'Items\score.csv','r',newline='') as csvfile:
             
             csvreader = csv.reader(csvfile)
             
@@ -501,7 +501,7 @@ def game():
     # Timer
     for i in range(5, -1, -1):
         
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
         
         p2.write(i, align = "center", font = ("Courier", 72, "bold"))
         t.wait(1)
@@ -556,7 +556,7 @@ def game():
             ch = 0
             no = 1
             
-            winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Bounce.wav", winsound.SND_ASYNC)
+            winsound.PlaySound(r"Items\Bounce.wav", winsound.SND_ASYNC)
             
             dx = -dx
             dy = -dy
@@ -578,7 +578,7 @@ def game():
             
             ch = 0
             
-            winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Bounce.wav", winsound.SND_ASYNC)
+            winsound.PlaySound(r"Items\Bounce.wav", winsound.SND_ASYNC)
             
             dx = -dx
             
@@ -603,7 +603,7 @@ def game():
 
             z = z*(-1)
 
-            winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+            winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
             
             ch = 0
             
@@ -641,7 +641,7 @@ def game():
 
 
         elif abs(r.ycor()) >= 240 and no == 0 :
-            winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Bounce_Wall.wav", winsound.SND_ASYNC)
+            winsound.PlaySound(r"Items\Bounce_Wall.wav", winsound.SND_ASYNC)
             dy = -dy
 
         sc._root.protocol("WM_DELETE_WINDOW", f7)
@@ -665,7 +665,7 @@ def pause():
     
         global dx, dy, copy1, copy2
     
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
     
         if not dx == 0:
     
@@ -691,9 +691,9 @@ def end():
         countf = 1
         count2 = 0
     
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_FILENAME)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_FILENAME)
     
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Music_WAV.wav", winsound.SND_LOOP+winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Music_WAV.wav", winsound.SND_LOOP+winsound.SND_ASYNC)
     
         p2.clear()
     
@@ -738,7 +738,7 @@ def end():
         p.goto(-330, 50)
         p.write("Press Esc to Quit.", font=("Courier", 24, "normal"))
     
-        with open('score.csv','a',newline='') as csvfile:
+        with open(r'Items\score.csv','a',newline='') as csvfile:
         
             csvwriter = csv.writer(csvfile)
         
@@ -817,9 +817,9 @@ def initial():
         p2.clear()
         p.clear()
 
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Action.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Action.wav", winsound.SND_ASYNC)
         
-        winsound.PlaySound(r"C:\Users\kesha\OneDrive\Desktop\Tasmay\Programing\Python\CS project Main_Class 11\Game_Music_WAV.wav", winsound.SND_LOOP+winsound.SND_ASYNC)
+        winsound.PlaySound(r"Items\Game_Music_WAV.wav", winsound.SND_LOOP+winsound.SND_ASYNC)
 
         d5()
         
