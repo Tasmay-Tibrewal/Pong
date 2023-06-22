@@ -1,4 +1,4 @@
-# Pong
+# Pong-Game-Recreation
 Recreation of the original pong game in python
 
 1) Download the files/folders from the repository
